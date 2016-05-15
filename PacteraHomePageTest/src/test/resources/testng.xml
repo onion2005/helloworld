@@ -1,0 +1,21 @@
+<suite name="PacteraHomePageTest">
+	<!-- [MUST] Input the type of browser you intend to use: firefox, chrome and firefox -->
+	<parameter name="browser_type" value="explorer" />
+	<!-- [OPTIONAL] If firefox is selected, please input the full path of the firefox binary on your system if there is a custom install -->
+	<parameter name="webdriver_ff_binary" value="D:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" />
+	<!-- [MUST] If explorer is selected, please input the full path of the IEDriverServer.exe on your system -->
+	<parameter name="webdriver_ie_driver" value="D:\\Java_Dev\\IEDriverServer.exe" />
+	<!-- [MUST] If chrome is selected, please input the full path of the chromedriver.exe on your system -->
+	<parameter name="webdriver_chrome_driver" value="D:\\Java_Dev\\chromedriver.exe" />
+	<!-- [OPTIONAL] If chrome is selected, please input the full path of the chrome binary on your system if there is a custom install -->
+	<parameter name="webdriver_chrome_binary" value="" />
+	<!-- [MUST] Input the url of the site here -->
+	<parameter name="url" value="http://www.pactera.com/" />
+	<!-- [MUST] Input the search keyword -->
+	<parameter name="keyword" value="test automation" />
+	<test name="TestCase">
+		<classes>
+			<class name="com.pactera.pacterahomepagetest.TestTwoFeatures" />
+		</classes>
+	</test>
+</suite>
